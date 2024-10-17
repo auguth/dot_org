@@ -1,0 +1,22 @@
+<section class="press wrapper1">
+    <h1>Press</h1>
+    <h5>Find our recent press releases</h5>
+    
+    <div class="fluid press-box">
+        <div class="row g-3">
+          {% assign sorted_announcements = site.PRESS | sort: 'date'| reverse  %}
+          {% for page in sorted_announcements %}
+            <div class="col-md-6 col-lg-4 g-3">
+               <div class="card announcard">
+                  <img src="{{site.baseurl}}/assets/images/{{page.imgurl}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <p class="date">{{ page.date | date: "%d %B %Y" }}</p>
+                  <a href="{{site.url}}{{page.url | remove: '.html'}}" class="boxlink"><h5 class="card-title">{{page.title}}</h5></a>
+                  <a href="{{site.url}}{{page.url | remove: '.html'}}" class="boxlink"><p class="card-text">{{page.description | truncate: 75}}</p></a>
+                </div>
+               </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+</section>

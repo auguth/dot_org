@@ -1,0 +1,17 @@
+---
+layout: announlist
+---
+<div class="announlist">
+    <h1>Recents Press List</h1>
+    <br>
+    <div class="listcontainer">
+        {% assign sorted_announ = site.PRESS | sort: 'date' | reverse %}
+        {% for page in sorted_announ %}
+                <div class="listcontent">
+                    <p class="listdate">{{ page.date | date: "%d %B %Y" }}</p>
+                    <a class="listtitle" href="{{site.baseurl}}{{page.url | remove: '.html'}}"><h2>{{page.title }}</h2></a>
+                </div>
+        {% endfor %}
+    </div>
+</div>
+

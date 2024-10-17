@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    <header>
+        {% include header.html %}
+    </header>    
+    <div id="announpage" class="wrapper">
+        {% include pressmd.html %}
+        <div id="maincontent">{{content}}</div>
+        <br><br>
+        <div id="giscus-cmt">
+            {% include giscus.html %}
+        </div>
+    </div>
+    <div class="totop">
+        <a href="#">
+          <i class='bx backtop bxs-to-top'></i>
+       </a>
+    </div>
+    {% include footerscripts.html %}
+    {% include footer.html %}
+</body>
+</html>

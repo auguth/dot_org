@@ -1,0 +1,29 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.title | escape }}</title>
+    <link>{{ site.url | prepend: site.baseurl }}</link>
+    <description>{{ site.description | escape }}</description>
+    <language>{{ site.lang | default: "en-US" }}</language>
+    <atom:link href="{{ site.url | prepend: site.baseurl }}/feed.xml" rel="self" type="application/rss+xml"/>
+
+    {% for post in site.PRESS %}
+    <item>
+      <title>{{ post.title | escape }}</title>
+      <link>{{ site.url | prepend: site.baseurl }}{{ post.url }}</link>
+      <description>{{ post.description | strip_html | escape }}</description>
+
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+
+     <guid isPermaLink="true">{{ site.url | prepend: site.baseurl }}{{ post.url }}</guid>
+
+      <content:encoded><![CDATA[
+        {{ post.content | xml_escape }}
+      ]]></content:encoded>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

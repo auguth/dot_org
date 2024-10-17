@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    <header>
+    {% include header.html %}
+    </header>
+    <div class="wrapper">
+        {{content}}
+    </div>
+    <div class="totop">
+        <a href="#">
+          <i class='bx backtop bxs-to-top'></i>
+       </a>
+      </div>
+      <footer>
+        {% include footer.html %}
+      </footer>
+      {% include footerscripts.html %}
+
+</body>
+</html>

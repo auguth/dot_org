@@ -1,0 +1,57 @@
+<Section class="hero">
+    <div class="slider">
+        {% assign slides = site.PRESS %}
+        {% for page in slides %}
+        <div class="slide">
+            <!-- Overlay to darken the image -->
+            <div class="hero-overlay"></div>
+            <div class="herotxt">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.description | truncate: 100 }}</p>
+                <a href="{{site.url}}{{page.url | remove: '.html'}}">
+                    <button class="herobtn">Read <i class='bx bx-right-arrow-alt'></i></button>
+                </a>
+            </div>
+            <img class="heroimg" src="{{site.baseurl}}/assets/images/{{page.imgurl}}" alt="">
+        </div>
+        {% endfor %}
+        
+        <div class="dotsbox" style="text-align: center;">
+            {% for page in slides %}
+            <span class="dot" data-index="{{forloop.index}}" onclick="currentSlide(this.getAttribute('data-index'))"></span>
+            {% endfor %}
+        </div>
+    </div>
+</Section>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
+
+// Auto slide every 5 seconds
+setInterval(() => {
+    showSlides(slideIndex += 1);
+}, 5000);
+
+</script>

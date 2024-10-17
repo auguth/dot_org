@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auguth Research</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+<link rel="alternate" type="application/rss+xml" title="Auguth Research Foundation" href="http://localhost:4000/feed.xml" />
+
+</head>
+<body>
+    <header>
+    <nav class="header">
+    <a href="/index.html"><img class="logo" src="/assets/images/auguth_full_logo.png" alt="Brand-logo"></a>
+    <div class="menubox">
+        <ul>
+            <li><a class="menu-link" href="/pages/presslist.html">Press</a></li>
+            <li><a class="menu-link" href="/pages/key-persons.html">Key Persons</a></li>
+            <li><a class="menu-link" href="https://github.com/auguth" target="_blank">Github</a></li>
+            <li><a class="menu-link" href="/#contactsection">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="hamburger" id="hamburgerbox">
+        <lable href="hamburger-link"><i class='bx bx-menu'></i></lable>
+    </div>
+</nav>
+
+
+    </header>
+    <Section class="hero">
+    <div class="slider">
+        
+        
+        <div class="slide">
+            <!-- Overlay to darken the image -->
+            <div class="hero-overlay"></div>
+            <div class="herotxt">
+                <h1>Transitioning to a Section 8 Non-Profit Organization</h1>
+                <p>We are excited to announce our transition of activities from a Private Limited Organization (“Aug...</p>
+                <a href="http://localhost:4000/PRESS/transition">
+                    <button class="herobtn">Read <i class='bx bx-right-arrow-alt'></i></button>
+                </a>
+            </div>
+            <img class="heroimg" src="/assets/images/transistion.jpg" alt="">
+        </div>
+        
+        
+        <div class="dotsbox" style="text-align: center;">
+            
+            <span class="dot" data-index="1" onclick="currentSlide(this.getAttribute('data-index'))"></span>
+            
+        </div>
+    </div>
+</Section>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
+
+// Auto slide every 5 seconds
+setInterval(() => {
+    showSlides(slideIndex += 1);
+}, 5000);
+
+</script>
+
+    <section class="aboutus wrapper2">
+<h1>About us</h1>
+<p><strong>Auguth Research Foundation</strong> is a Section 8 company based in Karnataka, India, dedicated to advancing research and development in the field of software, particularly focusing on Web3 protocols and solutions. We aim to foster innovation in software design, customization, and implementation, providing essential support services related to internet and web-based applications. Our goal is to empower local programmers by offering the tools, advice, and resources they need to succeed in the rapidly evolving tech landscape.</p>
+<!-- <img class="abtusimg" src="/assets/images/aboutsusvec6.webp" alt=""> -->
+<div class="mvcontainer ">
+    <div class="mvbox">
+        <img class="mvicons" src="/assets/images/group.png" alt="">
+        <h3>Our mission</h3>
+        <p>Our mission is to drive innovation by fostering research and development in software and Web3 technologies. We aim to empower developers through educational initiatives, community support, and resources, ensuring that local talent can create scalable solutions that address both regional and global challenges.</p>
+    </div>
+    <div class="mvbox">
+        <img class="mvicons" src="/assets/images/vision.png" alt="">
+        <h3>Our Vision</h3>
+        <p>We envision a future where open collaboration and cutting-edge technology empower communities. By supporting the growth of Web3 and software development, we aim to create a global ecosystem where innovation thrives, and technological advancements benefit society, creating opportunities for everyone.</p>
+    </div>
+</div>
+</section>
+
+    <section class="objectives wrapper1">
+    <h1>Our Objectives</h1>
+    <h5>Empowering Technological Growth through Research, Development, and Community Collaboration</h5>
+    <div class="fluid obj-box">
+        <div class="row g-3">
+          <div class="col-lg-6 obj-content">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <strong>Research & Development</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We specialize in the design, customization, and maintenance of software solutions.
+                            Our focus areas include Web3 protocols, internet-based applications, and IT-enabled services.
+                            We provide extensive support to developers, including tools, advice, and assistance to help bring their innovations to life.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Educational Initiatives</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We organize seminars, workshops, conferences, and training programs aimed at equipping upcoming programmers with the necessary
+                            skills to excel in the Web3 and software development space. Our resources include free educational content, training modules, 
+                            and advisory services to promote learning and awareness among students and developers.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>Community Support</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We are committed to supporting the local programming community by offering tailored solutions, 
+                            educational resources, and platforms to showcase and enhance their work. Our efforts are focused on 
+                            ensuring that local innovations can meet regional requirements while being globally competitive.
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-6 obj-img-box">
+            <img src="/assets/images/objectives.jpg" class="img-fluid obj-img rounded-start" alt="...">
+          </div>
+        </div>
+    </div>
+
+</section>
+    <section class="educational wrapper1">
+    <h1>Educational Initiatives & Community Support</h1>
+    <h5>Building Knowledge and Empowering Communities for a Brighter Technological Future</h5>
+    <div class="fluid edu-box">
+        <div class="row g-3">
+            <div class="col-lg-6">
+                <div id="carouselExampleCaptions" class="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/edu.jpg" class="d-block edu-img w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 style="color: white;">Our Educational Initiatives</h4>
+                                <p style="color: rgb(230, 230, 230);">Comming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div id="carouselExampleCaptions" class="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/community.jpg" class="d-block community-img w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 style="color: white;">Our community support</h4>
+                                <p style="color: rgb(230, 230, 230);">Coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="press wrapper1">
+    <h1>Press</h1>
+    <h5>Find our recent press releases</h5>
+    
+    <div class="fluid press-box">
+        <div class="row g-3">
+          
+          
+            <div class="col-md-6 col-lg-4 g-3">
+               <div class="card announcard">
+                  <img src="/assets/images/transistion.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <p class="date">18 October 2024</p>
+                  <a href="http://localhost:4000/PRESS/transition" class="boxlink"><h5 class="card-title">Transitioning to a Section 8 Non-Profit Organization</h5></a>
+                  <a href="http://localhost:4000/PRESS/transition" class="boxlink"><p class="card-text">We are excited to announce our transition of activities from a Private L...</p></a>
+                </div>
+               </div>
+            </div>
+          
+        </div>
+    </div>
+</section>
+
+    <section id="contactsection" class="contactus wrapper1">
+<h1 class="contactushead">Contact us</h1>
+<div class="card mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img src="/assets/images/contactus.jpg" class="img-fluid contactusing rounded-start" alt="...">
+      </div>
+      <div class="col-md-6 contacttxt-body">
+        <div class="card-body contact-body">
+          <h3 class="card-title">Auguth Research Foundation</h3>
+          <p class="card-text contact-txt"><i class='bx bxs-map' style='color:#1baaaa' ></i> #14 1st Main, 1st Cross, ITI Layout, <br> A Narayanapur, Doorvaninagar, Bangalore, Bangalore North, <br>Karnataka, India, 560016</p>
+          <p class="card-text contact-txt"><i class='bx bxs-envelope mailicon' style='color:#1baaaa' ></i><a class="maillnk" href="mailto:info@auguth.org">info@auguth.org</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  
+  
+    <footer> 
+        <footer  class="footercontainer">
+    <div class="footerlinks">
+        <a href="/termsandconditions">Terms and conditions</a>
+        <a href="/privacypolicy">Privacy policy</a>
+        <a href="/feed.xml">RSS</a>
+    </div>
+    <p class="footertxt"> Copyright @ Auguth Research Foundation 2024 </p>
+</footer>
+   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!--  Header -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var hamburger = document.getElementById('hamburgerbox');
+    var menubox = document.querySelector('.menubox');
+    var icon = document.querySelector('.bx');
+
+    hamburger.addEventListener('click', function () {
+        menubox.classList.toggle('transition');
+        menubox.style.left = (menubox.style.left === "-100%" || menubox.style.left === "") ? "0" : "-100%";
+
+        // Toggle between 'bx-menu' and 'bx-x' icons
+        icon.classList.toggle('bx-menu');
+        icon.classList.toggle('bx-x');
+    });
+});
+</script>
+</body>
+</html>

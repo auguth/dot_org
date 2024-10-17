@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auguth Research</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+<link rel="alternate" type="application/rss+xml" title="Auguth Research Foundation" href="http://localhost:4000/feed.xml" />
+
+</head>
+<body>
+    <header>
+        <nav class="header">
+    <a href="/index.html"><img class="logo" src="/assets/images/auguth_full_logo.png" alt="Brand-logo"></a>
+    <div class="menubox">
+        <ul>
+            <li><a class="menu-link" href="/pages/presslist.html">Press</a></li>
+            <li><a class="menu-link" href="/pages/key-persons.html">Key Persons</a></li>
+            <li><a class="menu-link" href="https://github.com/auguth" target="_blank">Github</a></li>
+            <li><a class="menu-link" href="/#contactsection">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="hamburger" id="hamburgerbox">
+        <lable href="hamburger-link"><i class='bx bx-menu'></i></lable>
+    </div>
+</nav>
+
+
+    </header>    
+    <div id="announpage" class="wrapper">
+        
+<div class="btncontainer">
+    <div class="sharediv">
+            <button id="shareButton" class="socialbtn share-button"><i class='bx mdicon bxs-share-alt' style='color:#ffffff'  ></i>Share</a></button>           
+            <div class="share-menu" id="shareMenu">
+                <span class="share-icon" onclick="shareOnWhatsApp()"><i class='bx bxl-whatsapp' style='color:#ffffff'></i></span>
+                <span class="share-icon" onclick="shareViaEmail()"><i class='bx bxs-envelope' style='color:#ffffff' ></i></span>
+                <span class="share-icon" onclick="shareOnTwitter()"><i class='bx bxl-twitter' style='color:#ffffff' ></i></span>
+                <span class="share-icon" onclick="shareOnTelegram()"><i class='bx bxl-telegram' style='color:#ffffff' ></i></span>
+            </div>
+        </div>
+        
+    <button class="socialbtn" id="scrollToGiscus">
+        <i class='bx mdicon bxs-conversation'></i>
+        <a class="btnlnk" href="#">Discuss</a>
+    </button>    
+</div>
+
+<h1>Transitioning to a Section 8 Non-Profit Organization</h1>
+<p> We are excited to announce our transition of activities from a Private Limited Organization (“Auguth Tech Private Limited”) to Auguth Research Foundation, now officially recognized as a Section 8 Non-Profit Organization. This shift allows us to focus on our mission of improving internet protocols and promoting open-source education across India. Our goals include community outreach, collaboration, and advancing technology for social good. </p>
+<p><strong>Created on : </strong> 18 October 2024 </p>
+
+<br>
+        
+<h2>Table of contents</h2>
+<ol><li><a href="#transitioning-to-a-section-8-non-profit-organization">Transitioning to a Section 8 Non-Profit Organization</a><ol><li><a href="#tldr">TLDR</a></li><li><a href="#what-is-a-section-8-non-profit-organization">What is a Section 8 Non-Profit Organization?</a></li><li><a href="#reasons-for-transition">Reasons for Transition</a><ol><li><a href="#a-commitment-to-the-greater-good">A Commitment to the Greater Good</a></li><li><a href="#enhanced-focus-on-research-and-education">Enhanced Focus on Research and Education</a></li><li><a href="#aligning-with-our-core-values">Aligning with Our Core Values</a></li></ol></li><li><a href="#details-of-the-non-profit-organization">Details of the Non-Profit Organization</a></li><li><a href="#our-objectives-and-goals">Our Objectives and Goals</a></li><li><a href="#our-ways-of-funding-the-initiatives">Our Ways of Funding the Initiatives</a></li><li><a href="#ensuring-transparency">Ensuring Transparency</a></li><li><a href="#why-we-chose-bangalore-india-for-our-operations">Why We Chose Bangalore, India for Our Operations</a></li><li><a href="#addressing-common-questions">Addressing Common Questions</a><ol><li><a href="#what-will-happen-to-the-previous-private-limited-organization">What will happen to the previous Private Limited Organization?</a></li><li><a href="#how-can-i-get-involved">How can I get involved?</a></li><li><a href="#will-there-be-any-changes-to-existing-programs">Will there be any changes to existing programs?</a></li></ol></li><li><a href="#a-personal-note">A Personal Note</a></li><li><a href="#looking-ahead">Looking Ahead</a></li></ol></li></ol></li></ol>
+             
+<br>
+        
+<div>
+    <img class="imgurl" src="/assets/images/transistion.jpg" alt="">
+</div>
+   
+<br>
+<!-- share icon script -->
+<script>
+    // JavaScript functions for sharing
+    function shareOnWhatsApp() {
+        window.open("https://api.whatsapp.com/send?text=" + encodeURIComponent(window.location.href), "_blank");
+    }
+
+    function shareViaEmail() {
+        window.location.href = "mailto:?body=" + encodeURIComponent("Check out this link: " + window.location.href);
+    }
+
+    function shareOnTwitter() {
+        window.open("https://twitter.com/intent/tweet?url=" + encodeURIComponent(window.location.href), "_blank");
+    }
+
+    function shareOnTelegram() {
+        window.open("https://t.me/share/url?url=" + encodeURIComponent(window.location.href), "_blank");
+    }
+
+    // Toggle the share menu
+    document.getElementById("shareButton").addEventListener("click", function () {
+        var shareMenu = document.getElementById("shareMenu");
+        if (shareMenu.style.display === "block") {
+            shareMenu.style.display = "none";
+        } else {
+            shareMenu.style.display = "block";
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollToGiscusButton = document.getElementById("scrollToGiscus");
+      const giscusDiv = document.getElementById("giscus-cmt");
+  
+      scrollToGiscusButton.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default behavior of the anchor link
+        giscusDiv.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+  
+
+
+
+
+
+        <div id="maincontent"><h1 id="transitioning-to-a-section-8-non-profit-organization">Transitioning to a Section 8 Non-Profit Organization</h1>
+
+<h3 id="tldr">TLDR</h3>
+<p>We are excited to announce our transition of activities from a Private Limited Organization (“Auguth Tech Private Limited”) to Auguth Research Foundation, now officially recognized as a Section 8 Non-Profit Organization. This shift allows us to focus on our mission of improving internet protocols and promoting open-source education across India. Our goals include community outreach, collaboration, and advancing technology for social good.</p>
+
+<hr />
+
+<h3 id="what-is-a-section-8-non-profit-organization">What is a Section 8 Non-Profit Organization?</h3>
+<p>A Section 8 Non-Profit Organization is registered under the Companies Act of 2013 in India. Its primary purpose is to promote social welfare, education, and research. Unlike traditional for-profit entities, Section 8 organizations operate without the intention of generating profits for shareholders. Instead, any surplus income is reinvested to further the organization’s objectives. This structure empowers us to dedicate ourselves fully to our mission of making the internet a better place for all.</p>
+
+<hr />
+
+<h3 id="reasons-for-transition">Reasons for Transition</h3>
+
+<h4 id="a-commitment-to-the-greater-good">A Commitment to the Greater Good</h4>
+<p>As we navigated our journey, it became increasingly clear that our focus needed to shift from profit-driven motives to social impact. The digital landscape poses numerous challenges that require thoughtful, collaborative solutions. Transitioning to a Section 8 Non-Profit allows us to prioritize the needs of the community and society at large, ensuring that our work benefits everyone.</p>
+
+<h4 id="enhanced-focus-on-research-and-education">Enhanced Focus on Research and Education</h4>
+<p>In our previous structure, while we made strides in research and protocol development, the focus was often constrained by business considerations. By transitioning to a non-profit model, we can channel our resources more effectively into impactful research and educational initiatives. This newfound focus will allow us to engage communities throughout India, fostering a culture of knowledge-sharing and innovation.</p>
+
+<h4 id="aligning-with-our-core-values">Aligning with Our Core Values</h4>
+<p>At our core, we believe in the power of open-source technologies and their potential to drive positive change. Our transition allows us to advocate more vigorously for open-source initiatives, emphasizing the importance of transparency, collaboration, and accessibility. We are committed to ensuring that the digital tools we develop serve the public interest and promote inclusivity.</p>
+
+<hr />
+
+<h3 id="details-of-the-non-profit-organization">Details of the Non-Profit Organization</h3>
+<p><strong>Auguth Research Foundation</strong> is now officially a Section 8 Non-Profit Organization dedicated to advancing internet protocols and educating communities about open-source technologies. Our legal framework enables us to operate with a mission-driven approach, allowing us to:</p>
+
+<ul>
+  <li>Focus on societal benefits rather than profits.</li>
+  <li>Engage in extensive outreach and educational programs.</li>
+  <li>Foster collaborations with other like-minded organizations.</li>
+</ul>
+
+<hr />
+
+<h3 id="our-objectives-and-goals">Our Objectives and Goals</h3>
+
+<ol>
+  <li>
+    <p><strong>Enhance Digital Literacy:</strong> We aim to provide educational resources and workshops that empower individuals and communities to understand and utilize internet technologies effectively.</p>
+  </li>
+  <li>
+    <p><strong>Develop New Protocols:</strong> Our research will focus on creating innovative protocols that improve internet functionality and accessibility for all users.</p>
+  </li>
+  <li>
+    <p><strong>Promote Open Source:</strong> We are committed to advocating for open-source solutions, ensuring they are accessible to everyone and fostering a collaborative development environment.</p>
+  </li>
+  <li>
+    <p><strong>Community Engagement:</strong> We will actively engage with various communities across India to raise awareness about the importance of digital rights and open-source technologies.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="our-ways-of-funding-the-initiatives">Our Ways of Funding the Initiatives</h3>
+
+<p>Transitioning to a Section 8 Non-Profit means we will seek funding through various avenues:</p>
+
+<ol>
+  <li>
+    <p><strong>Grants:</strong> We will apply for grants from governmental and international organizations focused on technology, education, and social welfare.</p>
+  </li>
+  <li>
+    <p><strong>Donations:</strong> We will invite contributions from individuals and businesses that align with our mission. Your support will directly impact our programs and initiatives.</p>
+  </li>
+  <li>
+    <p><strong>Partnerships:</strong> Collaborating with like-minded organizations will allow us to pool resources and create a larger impact together.</p>
+  </li>
+  <li>
+    <p><strong>Fundraising Events:</strong> We plan to host events aimed at raising awareness and funds for our initiatives, providing opportunities for community involvement and support.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="ensuring-transparency">Ensuring Transparency</h3>
+
+<p>We believe in maintaining transparency and accountability as a cornerstone of our operations. To that end, we are providing access to important documents that reflect our commitment to openness:</p>
+
+<ul>
+  <li>Incorporation Certificate: <a href="/assets/docs/Certificate-of-Incorporation.pdf" target="_blank">Link to Incorporation Certificate</a></li>
+  <li>Section 8 License: <a href="/assets/docs/Section-8-License.pdf" target="_blank">Link to License</a></li>
+  <li>Memorandum of Association (MOA): <a href="/assets/docs/MOA.pdf" target="_blank">Link to MOA</a></li>
+  <li>Articles of Association (AOA): <a href="/assets/docs/AOA.pdf" target="_blank">Link to AOA</a></li>
+</ul>
+
+<p>These documents are available for public access.</p>
+
+<hr />
+
+<h3 id="why-we-chose-bangalore-india-for-our-operations">Why We Chose Bangalore, India for Our Operations</h3>
+
+<p>We selected Bangalore, known as the “Silicon Valley of India,” for several key reasons:</p>
+
+<ol>
+  <li>
+    <p><strong>Thriving Tech Ecosystem:</strong> The city is a hub for startups, established companies, and research institutions, fostering innovation and collaboration.</p>
+  </li>
+  <li>
+    <p><strong>Skilled Talent Pool:</strong> With top educational institutions nearby, Bangalore offers access to a diverse and skilled workforce eager to engage in technology and research.</p>
+  </li>
+  <li>
+    <p><strong>Access to Funding:</strong> The city’s vibrant investment scene provides greater opportunities for funding and partnerships that align with our mission.</p>
+  </li>
+  <li>
+    <p><strong>Cultural Diversity:</strong> Bangalore’s multicultural environment promotes inclusivity, allowing us to connect with varied communities and enhance our outreach efforts.</p>
+  </li>
+  <li>
+    <p><strong>Government Support:</strong> Local government initiatives support technology-driven projects, creating a favorable landscape for our operations.</p>
+  </li>
+</ol>
+
+<p>By establishing our foundation in Bangalore, we position ourselves at the forefront of India’s tech landscape, empowering us to effectively drive our mission forward.</p>
+
+<hr />
+
+<h3 id="addressing-common-questions">Addressing Common Questions</h3>
+
+<h4 id="what-will-happen-to-the-previous-private-limited-organization">What will happen to the previous Private Limited Organization?</h4>
+<p>The previous Private Limited Organization will be dissolved sooner at a slower pace; instead, we will operate under the same name as our non-profit foundation, ensuring continuity while embracing our new mission.</p>
+
+<h4 id="how-can-i-get-involved">How can I get involved?</h4>
+<p>There are numerous ways to engage with us! You can participate in workshops, volunteer your expertise, or contribute to our research initiatives. Your support is essential as we work towards a better internet for all.</p>
+
+<h4 id="will-there-be-any-changes-to-existing-programs">Will there be any changes to existing programs?</h4>
+<p>Existing programs will continue and shall be transferred to the non-profit foundation, with enhancements to align them with our non-profit mission. We are dedicated to improving our initiatives to ensure a positive community impact.</p>
+
+<hr />
+
+<h3 id="a-personal-note">A Personal Note</h3>
+<p>As we embark on this transformative journey, we want to express our heartfelt gratitude to each of you—our supporters, collaborators, and advocates. Your belief in our mission has been a source of inspiration, motivating us to strive for excellence and positive change.</p>
+
+<h3 id="looking-ahead">Looking Ahead</h3>
+<p>We invite you to join us on this journey toward a brighter digital future. Whether you’re a technology advocate, an educator, or someone who believes in the power of open-source technology, there’s a place for you in our community. Stay tuned for updates on upcoming events, workshops, and opportunities to get involved. Together, we can create a more inclusive and equitable internet for everyone.</p>
+
+<p>Thank you for being a part of this exciting new chapter!</p>
+
+<hr />
+<p>With warm regards,</p>
+
+<p><strong>Joby Reuben</strong><br />
+<strong>Director &amp; Research Associate</strong>
+Auguth Research Foundation
+Bangalore, India
+joby[at]auguth[dot]org</p>
+
+</div>
+        <br><br>
+        <div id="giscus-cmt">
+            
+<h2 class="giscust">Discussions</h2>
+
+<div class="giscus">
+    <script src="https://giscus.app/client.js"
+           data-repo="silvernberry/mini-journal"
+           data-repo-id="R_kgDOKlWT-g"
+           data-category="Announcements"
+           data-category-id="DIC_kwDOKlWT-s4Cado8"
+           data-mapping="url"
+           data-strict="0"
+           data-reactions-enabled="0"
+           data-emit-metadata="1"
+           data-input-position="top"
+           data-theme="light_protanopia" 
+           data-lang="en"
+           data-loading="lazy"
+           crossorigin="anonymous"
+           async>
+    </script>
+</div>
+
+        </div>
+    </div>
+    <div class="totop">
+        <a href="#">
+          <i class='bx backtop bxs-to-top'></i>
+       </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!--  Header -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var hamburger = document.getElementById('hamburgerbox');
+    var menubox = document.querySelector('.menubox');
+    var icon = document.querySelector('.bx');
+
+    hamburger.addEventListener('click', function () {
+        menubox.classList.toggle('transition');
+        menubox.style.left = (menubox.style.left === "-100%" || menubox.style.left === "") ? "0" : "-100%";
+
+        // Toggle between 'bx-menu' and 'bx-x' icons
+        icon.classList.toggle('bx-menu');
+        icon.classList.toggle('bx-x');
+    });
+});
+</script>
+    <footer  class="footercontainer">
+    <div class="footerlinks">
+        <a href="/termsandconditions">Terms and conditions</a>
+        <a href="/privacypolicy">Privacy policy</a>
+        <a href="/feed.xml">RSS</a>
+    </div>
+    <p class="footertxt"> Copyright @ Auguth Research Foundation 2024 </p>
+</footer>
+
+</body>
+</html>
